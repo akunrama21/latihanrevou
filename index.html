@@ -1,11 +1,124 @@
 <!DOCTYPE html>
-    <head>
-        <title>Assignment - Rio</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-
-    <body>
-
-    </body>
-        
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - Rio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header-container">
+        <section class="logo-icon"></section>
+        <section class="nav-container">
+            <button>Home</button>
+            <button>Our Page</button>
+            <button>Call Us</button>
+        </section>
+    </header>
+    <hr />
+    <section class="section-container">
+        <header>
+            <h1 style="font-size: 40px;">Halo "<span id="name">User</span>"!<br> Welcome to Astral Express</h1>
+            <h3><i>May This Journey Lead Us Starward</i></h3>
+        </header>
+        <div id="home" class="section-content-container">
+            <article class="left-content">
+                <!--Ini Konten Autoslide Banner-->
+                <div style="height: 200px; width: 94%;background-color: antiquewhite; margin-right: 16px;">
+                    <section class="gambar-iklan"></section>
+                </div>
+                <p><i>"Liburan jadi menyenangkan bersama Astral Express."</i></p>
+                <section class="logo-orang"></section>
+                <p style="font-weight: bold;">Mei</p>
+                <p><i>Ibu Rumah Tangga, 29</i></p><br/>
+                    <div class="left-feature-content">
+                        <header>
+                            <h4>Why should you choose 'Astral Express' as your travel agent?</h4>                       
+                        </header>
+                            <div class="circle-list-content">
+                                <div class="circle-list">
+                                    <div class="number-list">1</div>
+                                    <div class="feature-content">Fast and Reliable Service</div>
+                                </div>
+                                <div class="circle-list">
+                                    <div class="number-list">2</div>
+                                    <div class="feature-content">Personalized Travel Experience</div>
+                                </div>
+                                    <div class="circle-list">
+                                        <div class="number-list">3</div>
+                                        <div class="feature-content">Unmatched Expertise</div>
+                                    </div>
+                            </div>
+            </article>
+                <!--Ini Konten Form-->
+            <article class="right-content">
+                <div class="right-content-description">
+                    <h1>Contact Us</h1>
+                    <p>Sales will contact you within 24 hours after we receive your data.</p>
+                </div>
+                <!-- <div style="height: 200px; width: 100%;background-color: lightblue; margin-left: 16px;"> -->
+                <form class="form-container" onsubmit="return validateForm()">
+                    <label>Your Name:</label><br />    
+                    <input type="text" class="name-input" placeholder="First and last name" name="name-input"><br />
+                    <label>Email Address :</label><br />    
+                    <input type="email" class="email-input" placeholder="example@email.com" name="email-input"><br />
+                    <label>What are you interested in?</label><br />    
+                    <select class="select-input" name="select-input">
+                        <option value="" disabled selected>Select your option</option>
+                        <option value="I">Option 1</option>
+                        <option value="II">Option 2</option>
+                        <option value="III">Option 3</option>
+                    </select>
+                    <div id="warning-message" style="color: red; display: none;">Tidak boleh ada kolom yang kosong!</div><br>
+                    <button type="button1" class="button-style-1">Send</button><br>
+                </form>    
+            </article>
+        </div>    
+    </section>
+    <section id="our-package" class="section-package">
+        <div id="our-packages" class="section-package">
+            <header>
+                <h1>our package</h1>
+            </header>
+        </div>
+    </section>   
+    <section class="section-card-container">
+        <div class="top-row">
+            <div class="card">
+                <h2>Bali</h2>
+                <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+            </div>
+            <div class="card">
+                <h2>Japan</h2>
+                <p>Travel dan wisata di Japan. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+            </div>
+            <div class="card">
+                <h2>Singapore</h2>
+                <p>This description supports and extends the bullet point above</p>
+            </div>
+        </div>
+        <div class="bottom-row">
+            <div class="card">
+                <h2>Bandung</h2>
+                <p>This description supports and extends the bullet point above</p>
+            </div>
+            <div class="card">
+                <h2>Surabaya</h2>
+                <p>This description supports and extends the bullet point above</p>
+            </div>
+            <div class="card">
+                <h2>Third Feature</h2>
+                <p>This description supports and extends the bullet point above</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-container-3">
+        <h1>Your Closing Argument Headline</h1>
+        <p class="subsection-heading">Suspendisse egestas rhoncus urna in bibendum. Donec urna neque, euismod sed justo quis</p>
+        <button type="button1" class="button-style-2">Call to Action</button>
+        <section class="logo-icon" style="margin: auto;margin-top: 20px;"></section>
+        <h6>Term of Service     Privacy Policy <br/>©2019 Astral Express</h6>
+    </section>
+    <script src="js/script.js"></script>
+</body>        
 </html>
